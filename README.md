@@ -1,14 +1,27 @@
 # Spika web wallet on the Aptos blockchain
 
-![Spika web wallet](./assets/header.png)
+![Spika web wallet](https://github.com/SpikaApp/spika-extension/raw/main/assets/header.png)
 
 ## **Description**
 
-Wallet was created during early stages of Aptos blockchain development and serves as an extension to [simple-cli-wallet](https://github.com/xorgal/simple-cli-wallet). It supports TestCoin transfer to other addresses and history of previous transactions. Account can be created with newly generated mnemonic phrase or by importing own mnemonic phrase in compliance with BIP39 standard. New account will start with 0 balance, however, it's possible to fund address by requesting TestCoin from Faucet. Mint function enables this. After address was successfully created account's mnemonic phrase and private key will be saved in browser's localStorage for next session. All sensitive data stored in browser are encrypted in AES-GCM mode using browser-passworder module. User's password serves as a key to unlock this data. Both mnemonic phrase and private key can be exported from localStorage at any time. "About" tab provides this information. Wallet doesn't save anything on it's own disk, all data saved in user's browser or in wallet's memory. Wallet's functional part is driven by Aptos SDK. Aptos Account is assembled in wallet's memory on each new browser's session based on mnemonic phrase provided either during generation of new account or during import of existing account.
+Spika is a crypto wallet that can be used to manage digital assets and access decentralized applications on Aptos blockchain.
+Wallet provides easy to use interface to access account balances, history of previous transactions, sending digital assets to other addresses and view collectibles in built-in NFT gallery.
+Wallet dApps API allows connecting Spika to decentralized applications, prompt for permission to access account's public information and sign transactions right from Spika user's interface.
+
+## **Main functions**
+
+- Create and import addresses
+- Send transactions between addresses
+- NFT gallery
+- Create collections and NFTs in-wallet
+- History of previous transactions
+- Import and manage custom tokens
+- Devnet, Testnet and custom networks
+- dApps integration (allow dApps to access account's public keys, addresses, sign transactions)
 
 ## **Installation**
 
-[![Available in Chrome Web Store](./assets/chrome_web_store.png)](https://chrome.google.com/webstore/detail/spika/fadkojdgchhfkdkklllhcphknohbmjmb)
+[![Available in Chrome Web Store](https://github.com/SpikaApp/spika-extension/raw/main/assets/chrome_web_store.png)](https://chrome.google.com/webstore/detail/spika/fadkojdgchhfkdkklllhcphknohbmjmb)
 
 There are 2 ways to install web wallet:
 
@@ -19,11 +32,11 @@ There are 2 ways to install web wallet:
 
 Navigate to [Chrome Web Store](https://chrome.google.com/webstore/detail/spika/fadkojdgchhfkdkklllhcphknohbmjmb) page and select **Add to Chrome**:
 
-![Add To Chrome](./assets/add_to_chrome.png)
+![Add To Chrome](https://github.com/SpikaApp/spika-extension/raw/main/assets/add_to_chrome.png)
 
 Web wallet will be installed and appear in the list of active extensions:
 
-![Extension](./assets/extension.png)
+![Extension](https://github.com/SpikaApp/spika-extension/raw/main/assets/extension.png)
 
 _NOTE: It might not be latest version of web wallet available in Chrome Web Store as publishing updates usually takes several days. See steps below for other options to update to latest version._
 
